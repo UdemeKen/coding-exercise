@@ -7,7 +7,7 @@ public class MedianTwoSortedArrays {
         int[] merged = new int[m + n];
         int i = 0, j = 0, k = 0;
 
-//        Merge the two sorted arrays
+//        Merge the two sorted array
         while (i < m && j < n) {
             if (nums1[i] < nums2[j]) {
                 merged[k++] = nums1[i++];
@@ -32,5 +32,6 @@ public class MedianTwoSortedArrays {
         }else {
             return merged[totalLength / 2];
         }
+
     }
 }
